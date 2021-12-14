@@ -1,20 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>주사위 게임</title>
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/default.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>주사위 게임</title>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/default.css">
 </head>
+
 <body>
-    <div w3-include-html="header.html"></div>
-    여기는 결과 페이지 입니다.
+	<header>
+		<h1><span class="material-icons">casino</span> Dice Game</h1>
+	</header>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-    <script src="./js/default.js"></script>
+	<section class="wrap result">
+		<div class="container">
+			<h3 class="subtitle">어느 주사위의 숫자가 더 클지 맞춰보세요!</h3>
+			<div class="gamer user">
+				<a href="javascript:void(0)">
+					<span class="material-icons">emoji_emotions</span>
+					<h3>게임참여자</h3>
+					<strong class="score">score : ?</strong>
+				</a>
+			</div>
+			<div class="gamer computer">
+				<a href="javascript:void(0)">
+					<span class="material-icons">smart_toy</span>
+					<h3>컴퓨터</h3>
+					<strong class="score">score : ?</strong>
+				</a>
+			</div>
+		</div>
+	</section>
 
+	<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+		crossorigin="anonymous"></script>
+	<script src="./js/default.js"></script>
 </body>
 </html>
